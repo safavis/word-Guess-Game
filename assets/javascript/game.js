@@ -14,10 +14,6 @@ for (let i=0; i<word_length;i++){
     document.querySelector('.guessing_chamber').append(location)
 
 }
-console.log(index)
-console.log(word_length)
-console.log(word[index][0])
-console.log(document.querySelector('.guessing_chamber').children)
 
 var resetting=function(){
     index= Math.floor(Math.random()*word.length)
@@ -36,7 +32,6 @@ var resetting=function(){
 }
 
 document.onkeyup=event=>{
-    console.log('ratfimtoo')
     already.push(event.key)
     if(word_incomplete===true){   
         remaining=remaining-1
